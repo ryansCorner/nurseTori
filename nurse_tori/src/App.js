@@ -1,14 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HeartBeat from './components/HeartBeat.jsx'
+import Hero from './components/Hero';
+import NavBar from './components/navigation/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <NavBar />
+      <div className='row'>
+      </div>
+      <Hero />
+      {/* <HeartBeat /> */}
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+      
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hi I'm Tori Stevulak <span smaller>BSN</span>
         </p>
         <a
           className="App-link"
@@ -18,7 +27,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
